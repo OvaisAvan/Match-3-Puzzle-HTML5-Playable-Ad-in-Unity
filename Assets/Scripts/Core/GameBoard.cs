@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using MatchBlitz.Core;
 using MatchBlitz.Ad;
+using MatchBlitz.Managers;
 using MatchBlitz.UI;
 
 namespace MatchBlitz.Core
