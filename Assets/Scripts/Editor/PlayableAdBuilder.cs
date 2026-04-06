@@ -4,7 +4,7 @@ using UnityEditor;
 using System.IO;
 using System.Diagnostics;
 using Debug = UnityEngine.Debug;
-
+using UnityEditor.Build.Reporting;
 namespace MatchBlitz.Editor
 {
     /// <summary>
@@ -81,7 +81,7 @@ namespace MatchBlitz.Editor
                 options          = BuildOptions.None
             };
 
-            var report = UnityEditor.Build.Reporting.BuildPipeline.BuildPlayer(opts);
+            var report = BuildPipeline.BuildPlayer(opts);
             if (report.summary.result != UnityEditor.Build.Reporting.BuildResult.Succeeded)
             {
                 Debug.LogError("[Builder] WebGL build FAILED.");
