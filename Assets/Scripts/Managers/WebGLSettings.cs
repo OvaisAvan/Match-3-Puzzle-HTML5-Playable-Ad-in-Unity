@@ -28,7 +28,7 @@ namespace MatchBlitz.Managers
                 QualitySettings.vSyncCount = 0;
 
             // Reduce texture memory — ads must stay under ~5 MB compressed
-            QualitySettings.masterTextureLimit = 0;
+            QualitySettings.globalTextureMipmapLimit = 0;
 
             // Prevent sleep on mobile browsers
             Screen.sleepTimeout = SleepTimeout.NeverSleep;
