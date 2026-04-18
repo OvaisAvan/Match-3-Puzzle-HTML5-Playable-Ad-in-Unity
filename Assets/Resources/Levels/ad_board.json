@@ -1,0 +1,31 @@
+{
+  "boardName": "AdBoard_Default",
+  "columns": 7,
+  "rows": 7,
+  "comment": "Gem type codes: 0=Red 1=Blue 2=Green 3=Yellow 4=Purple 5=Orange. Row 0 = bottom.",
+  "tiles": [
+    [0, 1, 2, 3, 4, 5, 0],
+    [1, 2, 3, 4, 5, 0, 1],
+    [2, 0, 0, 0, 1, 2, 3],
+    [3, 4, 1, 4, 3, 4, 2],
+    [4, 3, 2, 3, 2, 3, 1],
+    [0, 0, 0, 2, 1, 0, 4],
+    [1, 2, 3, 4, 0, 1, 2]
+  ],
+  "guaranteedSwaps": [
+    {
+      "note": "Swap (2,2) right → triggers 3 Red in row 2",
+      "from": [2, 2],
+      "to":   [3, 2]
+    },
+    {
+      "note": "Swap (1,5) right → triggers 3 Red in row 5",
+      "from": [1, 5],
+      "to":   [2, 5]
+    }
+  ],
+  "tutorialHintSwap": {
+    "from": [2, 2],
+    "to":   [3, 2]
+  }
+}
